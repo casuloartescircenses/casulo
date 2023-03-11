@@ -110,7 +110,7 @@ export default function Input() {
                       className=""
                       onClick={() => filePickerRef.current.click()}
                     >
-                      <PhotographIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 hover:bg-sky-100" />
+                      <PhotographIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 hover:bg-yellow-400" />
                       <input
                         type="file"
                         hidden
@@ -118,12 +118,12 @@ export default function Input() {
                         onChange={addImageToPost}
                       />
                     </div>
-                    <EmojiHappyIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 hover:bg-sky-100" />
+                    <EmojiHappyIcon className="h-10 w-10 hoverEffect p-2 text-sky-500 hover:bg-yellow-400" />
                   </div>
                   <button
                     onClick={sendPost}
                     disabled={!input.trim()}
-                    className="bg-blue-400 text-white px-4 py-1.5 rounded-full font-bold shadow-md hover:brightness-95 disabled:opacity-50"
+                    className="bg-yellow-400 text-white px-4 py-1.5 rounded-full font-bold shadow-md hover:brightness-95 disabled:opacity-50"
                   >
                     Tweet
                   </button>

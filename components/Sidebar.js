@@ -50,7 +50,7 @@ export default function Sidebar() {
         <Image
           width="50"
           height="50"
-          src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png"
+          src="/casulo_logo.png"
         ></Image>
       </div>
 
@@ -75,8 +75,8 @@ export default function Sidebar() {
 
       {currentUser ? (
         <>
-          <button className="bg-blue-400 text-white rounded-full w-56 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline">
-            Tweet
+          <button className="bg-yellow-400 text-white rounded-full w-56 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline">
+            Nova publicação
           </button>
 
           {/* Mini-Profile */}
@@ -98,7 +98,7 @@ export default function Sidebar() {
       ) : (
         <button
           onClick={() => router.push("/auth/signin")}
-          className="bg-blue-400 text-white rounded-full w-36 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline"
+          className="bg-yellow-400 text-white rounded-full w-36 h-12 font-bold shadow-md hover:brightness-95 text-lg hidden xl:inline"
         >
           Sign in
         </button>
